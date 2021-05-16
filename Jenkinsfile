@@ -13,7 +13,6 @@ pipeline {
                 echo 'Running build'
                 sh "chmod +x gradlew"
                 sh './gradlew build'
-                archiveArtifacts artifacts: 'dist/images.zip'
             }
         }
     }
